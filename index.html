@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=en-us>
+    <head>
+        <title>LOGIN page</title>
+        <meta name="viewport" width="device-width" initial-scale="1.0">
+         
+    </head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon"   href="log.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <body>
+    <div class="log-page"> 
+
+        <h1>Log in Here</h1>
+        <div class="input-box"> 
+            <i class="fa fa-envelope-o" ></i>
+            <input type="email" placeholder="Type your email">
+
+        </div>
+        <div class="input-box"> 
+            <i class="fa fa-key" ></i>
+             
+            <input type="password" placeholder="Type your password" id="myinput">
+            <span class="eye" onclick="myfunction()"> <i id="hide1" class="fa fa-eye" ></i>
+            <i id="hide2"  class="fa fa-eye-slash"  ></i>
+             </span>
+            
+        </div>
+        <button type="button" class="log-btn">Log In</button>
+    </div>
+    <script>
+        function myfunction(){
+            var x=document.getElementbyid("myinput");
+            var y=document.getElementbyid("hide1");
+            var z=document.getElementbyid("hide2");
+            if(x.type === "password"){
+                x.type= "text";
+                y.style.dispaly="block";
+                z.style.display="none";
+            }
+            else{
+                x.type= "password";
+                y.style.dispaly="none";
+                z.style.display="block";
+            }
+        }
+    </script>
+ </body>
+</html>
+
+
+ 
